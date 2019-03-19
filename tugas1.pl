@@ -12,6 +12,7 @@ mem(A, t(_, _, R)) :- mem(A, R).
 % 2
 
 in(e, L, L).
-in(t(L, X, R), Acc, E) :- in(R, Acc, P), in(L, [X|P], E).
+in(t(L, X, R), Acc, E) :- 
+    in(R, Acc, P), in(L, [X|P], E).
 
 in(T, E) :- in(T, [], E).
