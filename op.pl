@@ -10,4 +10,3 @@ termtype(X, number) :- number(X).
 termtype(X, atomic) :- atomic(X).
 termtype(_, term).
 
-groundterm(X) :- check_vars()
