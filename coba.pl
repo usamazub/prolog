@@ -7,13 +7,23 @@ test(X, A) :- X =.. B, A = B.
 f(X, X).
 
 :- op(650, xfx, suka).
-:- op(100, yfx, dan).
+:- op(350, yfx, dan).
 
 unyil suka bakso.
 unyil suka mie.
 unyil suka coklat.
-unyil suka bakso dan mie dan coklat.
 iin suka tempe.
 
-budi suka X :- unyil suka X.
-budi suka X :- X suka tempe.
+X suka Y dan Z :- X suka Y, X suka Z.
+
+:- op(300, xfx, [are, is_a]).
+:- op(300, fx, likes).
+:- op(200, xfy, and).
+:- op(100, fy, famous).
+
+dub is_a famous wizard.
+ani is_a witch.
+harry is_a wizard and (likes q).
+harry is_a (likes something).
+
+harry and ron and hermione are friends.
