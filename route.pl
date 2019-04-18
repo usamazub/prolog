@@ -6,7 +6,7 @@ directTrain(fahlquemont,stAvold).
 directTrain(metz,fahlquemont). 
 directTrain(nancy,metz).
 
-connected(A, B) :- directTrain(A, B), !.
+connected(A, B) :- directTrain(A, B).
 connected(A, B) :- directTrain(B, A).
 
 travelFromTo(X, Y, List) :- connected(X, Y), \+ member(Y, List), !.
