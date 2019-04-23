@@ -78,21 +78,21 @@ iterate(R_now, C_now, Val_now) :-
     Val_next is Val_now + 1,
     iterate(R_next, C_next, Val_next), !.
 
-ans(1, 2, 33).
-ans(1, 3, 35).
-ans(2, 3, 24).
-ans(2, 4, 22).
-ans(3, 4, 21).
-ans(4, 2, 26).
-ans(4, 4, 13).
-ans(4, 5, 40).
-ans(4, 6, 11).
-ans(5, 1, 27).
-ans(5, 5, 9).
-ans(5, 7, 1).
-ans(6, 5, 18).
-ans(7, 6, 7).
-ans(8, 7, 5).
+ans(1, 1, 38).
+ans(1, 3, 40).
+ans(1, 5, 6).
+ans(2, 2, 39).
+ans(2, 4, 7).
+ans(3, 3, 11).
+ans(4, 2, 1).
+ans(4, 4, 9).
+ans(5, 6, 17).
+ans(6, 3, 31).
+ans(6, 4, 27).
+ans(7, 5, 25).
+ans(7, 6, 23).
+ans(7, 7, 22).
+ans(8, 8, 21).
 
 find_ans :-
     ans(R, C, 1),
